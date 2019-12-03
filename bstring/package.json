@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bolenge/bString.git"
+    "url": "git+https://github.com/bolenge/mbstring.git"
   },
   "keywords": [
     "string",
@@ -29,7 +29,7 @@
   "author": "Don de Dieu Bolenge",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bolenge/bString/issues"
+    "url": "https://github.com/bolenge/mbstring/issues"
   },
-  "homepage": "https://github.com/bolenge/bString#readme"
+  "homepage": "https://github.com/bolenge/mbstring#readme"
 }

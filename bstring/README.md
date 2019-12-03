@@ -7,26 +7,26 @@ Librairie javascript offrant des méthodes permettant de gérer des chaines e ca
 Example d'utilisation
 
 ```js
-var bstring = require("bstring");
+var mbstring = require("mbstring");
 
 ```
 
-# ucFirst
+## ucFirst
 Permet de mettre la première lettre d'un text en majuscule
 ```js
 var text = "bolenge";
-var text = bstring.ucFirst(text);
+var text = mbstring.ucFirst(text);
 
 console.log(text)
 ```
 
-# isUrlValid
+## isUrlValid
 Permet de vérifier si un url est valide partant d'une regex de vérification
 ```js
-var url = "https://www.bstring.com"
-var url2 = "http://www.bstring.com"
+var url = "https://www.mbstring.com"
+var url2 = "http://www.mbstring.com"
 
-if (bstring.isUrlValid(url)) {
+if (mbstring.isUrlValid(url)) {
     console.log("Adress is valid")
 }else {
     console.log("Adress is invalid")
