@@ -1,0 +1,35 @@
+{
+  "name": "mbstring",
+  "version": "1.0.0",
+  "description": "Librairie offrant des méthodes permettant de gérer des chaines e caractères (string)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolenge/bString.git"
+  },
+  "keywords": [
+    "string",
+    "regex",
+    "expression",
+    "expression",
+    "expression",
+    "regulière",
+    "regular",
+    "char",
+    "ucFirst",
+    "first",
+    "uppercase",
+    "bolenge",
+    "bString",
+    "bstring"
+  ],
+  "author": "Don de Dieu Bolenge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bolenge/bString/issues"
+  },
+  "homepage": "https://github.com/bolenge/bString#readme"
+}
