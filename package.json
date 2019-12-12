@@ -1,6 +1,6 @@
 {
   "name": "mbstring",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Librairie offrant des méthodes permettant de gérer des chaines e caractères (string)",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,6 @@
   },
   "keywords": [
     "string",
-    "regex",
-    "expression",
-    "expression",
-    "expression",
-    "regulière",
-    "regular",
     "char",
     "ucFirst",
     "first",
