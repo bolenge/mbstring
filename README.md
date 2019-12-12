@@ -19,17 +19,3 @@ var text = mbstring.ucFirst(text);
 
 console.log(text)
 ```
-
-### isUrlValid
-Permet de vérifier si un url est valide partant d'une regex de vérification
-```js
-var url = "https://www.mbstring.com"
-var url2 = "http://www.mbstring.com"
-
-if (mbstring.isUrlValid(url)) {
-    console.log("Adress is valid")
-}else {
-    console.log("Adress is invalid")
-}
-
-```
