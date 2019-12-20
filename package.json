@@ -1,6 +1,6 @@
 {
   "name": "mbstring",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Librairie offrant des méthodes permettant de gérer des chaines e caractères (string)",
   "main": "index.js",
   "scripts": {
