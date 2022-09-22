@@ -1,1 +1,18 @@
-node_modules/
+# npm
+node_modules
+npm-debug.log*
+
+# yarn
+yarn.lock
+
+# Editors
+.vscode
+.idea
+
+# Build artifacts
+/src/**/*.js
+*.d.js
+lib
+
+# Misc
+.DS_Store
