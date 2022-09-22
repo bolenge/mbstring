@@ -22,11 +22,12 @@
   ],
   "author": "Don de Dieu Bolenge",
   "license": "ISC",
-  "dependencies": {
-    "mbregex": "^0.1.0"
-  },
+  "dependencies": {},
   "bugs": {
     "url": "https://github.com/bolenge/mbstring/issues"
   },
-  "homepage": "https://github.com/bolenge/mbstring#readme"
+  "homepage": "https://github.com/bolenge/mbstring#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
 }
