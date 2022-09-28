@@ -160,7 +160,7 @@ export const endsWith = (subject: string, search: string): boolean => {
  * @returns {bool}
  */
 
- export const isJson = (value: string): boolean => {
+export const isJson = (value: string): boolean => {
   try {
     JSON.parse(value);
     return true;
@@ -176,7 +176,24 @@ export const endsWith = (subject: string, search: string): boolean => {
  * @returns {int}
  */
 
- export const length = (value: string): number => {
+export const length = (value: string): number => {
   return value.length;
 };
 
+/**
+ * Limit the number of characters in a string.
+ *
+ * @param  {string}  value
+ * @param  {int}  limit
+ * @param  {string}  end
+ * @returns {string}
+ */
+
+export const limit = (
+  value: string,
+  limit: number,
+  end: string = "..."
+): string => {
+  if (value.length < limit) return value;
+  return `${value.substring(0, limit)}${end}`;
+};
