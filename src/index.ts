@@ -87,3 +87,18 @@ export const ucFirst = (str: string) : string => {
   if (from === "" || to === "") return subject;
   return before(after(subject, from), to);
 };
+
+/**
+ * Convert a value to camel case.
+ *
+ * @param  {string}  value
+ * @returns {string}
+ */
+
+ export const camel = (value: string, search: string): string => {
+  return (" " + value)
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]+(.)/g, function (match, chr) {
+      return chr.toUpperCase();
+    });
+};
