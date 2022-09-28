@@ -205,7 +205,7 @@ export const limit = (
  * @returns {string}
  */
 
- export const lower = (value: string): string => {
+export const lower = (value: string): string => {
   return value.toLowerCase();
 };
 
@@ -216,7 +216,21 @@ export const limit = (
  * @returns {string}
  */
 
- export const upper = (value: string): string => {
+export const upper = (value: string): string => {
   return value.toUpperCase();
 };
 
+/**
+ * Generate a more truly "random" alpha-numeric string.
+ *
+ * @param  {int}  length
+ * @returns {string}
+ */
+
+export const random = (length: number): string => {
+  return Math.round(
+    Math.pow(36, length + 1) - Math.random() * Math.pow(36, length)
+  )
+    .toString(36)
+    .slice(1);
+};
