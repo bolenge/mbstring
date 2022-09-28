@@ -102,3 +102,21 @@ export const ucFirst = (str: string) : string => {
       return chr.toUpperCase();
     });
 };
+
+/**
+ * Determine if a given string contains a given substring.
+ *
+ * @param  {string}  subject
+ * @param  {string}  search
+ * @param  {bool}  ignoreCase
+ * @returns {bool}
+ */
+
+ export const contains = (
+  subject: string,
+  search: string,
+  ignoreCase: boolean = false
+): boolean => {
+  if (ignoreCase) return subject.toLowerCase().includes(search.toLowerCase());
+  return subject.includes(search);
+};
