@@ -20,3 +20,14 @@ export const ucFirst = (str: string) : string => {
     ? subject.substring(subject.indexOf(search) + search.length)
     : subject;
 };
+
+/**
+ * Return the remainder of a string after the last occurrence of a given value.
+ *
+ * @param  {string}  subject
+ * @param  {string}  search
+ * @returns {string}
+ */
+ export const afterLast = (subject: string, search: string): string => {
+  return search === "" ? subject : subject.split(search).reverse()[0];
+};
