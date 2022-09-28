@@ -3,9 +3,9 @@
  * @param {string} str
  * @returns string
  */
-export const ucFirst = (str: string) : string => {
-  return str[0].toUpperCase() + str.substring(1)
-}
+export const ucFirst = (str: string): string => {
+  return str[0].toUpperCase() + str.substring(1);
+};
 
 /**
  * Return the remainder of a string after the first occurrence of a given value.
@@ -14,7 +14,7 @@ export const ucFirst = (str: string) : string => {
  * @param  {string}  search
  * @returns {string}
  */
- export const after = (subject: string, search: string): string => {
+export const after = (subject: string, search: string): string => {
   if (search === "") return subject;
   return subject.indexOf(search) !== -1
     ? subject.substring(subject.indexOf(search) + search.length)
@@ -28,7 +28,7 @@ export const ucFirst = (str: string) : string => {
  * @param  {string}  search
  * @returns {string}
  */
- export const afterLast = (subject: string, search: string): string => {
+export const afterLast = (subject: string, search: string): string => {
   return search === "" ? subject : subject.split(search).reverse()[0];
 };
 
@@ -39,7 +39,7 @@ export const ucFirst = (str: string) : string => {
  * @param  {string}  search
  * @returns {string}
  */
- export const before = (subject: string, search: string): string => {
+export const before = (subject: string, search: string): string => {
   return search === "" ? subject : subject.split(search)[0];
 };
 
@@ -51,7 +51,7 @@ export const ucFirst = (str: string) : string => {
  * @returns {string}
  */
 
- export const beforeLast = (subject: string, search: string): string => {
+export const beforeLast = (subject: string, search: string): string => {
   return search === ""
     ? subject
     : subject.substring(0, subject.lastIndexOf(search));
@@ -65,7 +65,7 @@ export const ucFirst = (str: string) : string => {
  * @param  {string}  to
  * @returns {string}
  */
- export const between = (subject: string, from: string, to: string): string => {
+export const between = (subject: string, from: string, to: string): string => {
   if (from === "" || to === "") return subject;
   return beforeLast(after(subject, from), to);
 };
@@ -79,7 +79,7 @@ export const ucFirst = (str: string) : string => {
  * @returns {string}
  */
 
- export const betweenFirst = (
+export const betweenFirst = (
   subject: string,
   from: string,
   to: string
@@ -95,7 +95,7 @@ export const ucFirst = (str: string) : string => {
  * @returns {string}
  */
 
- export const camel = (value: string, search: string): string => {
+export const camel = (value: string, search: string): string => {
   return (" " + value)
     .toLowerCase()
     .replace(/[^a-zA-Z0-9]+(.)/g, function (match, chr) {
@@ -112,7 +112,7 @@ export const ucFirst = (str: string) : string => {
  * @returns {bool}
  */
 
- export const contains = (
+export const contains = (
   subject: string,
   search: string,
   ignoreCase: boolean = false
@@ -120,7 +120,6 @@ export const ucFirst = (str: string) : string => {
   if (ignoreCase) return subject.toLowerCase().includes(search.toLowerCase());
   return subject.includes(search);
 };
-
 
 /**
  * Determine if a given string contains all array values.
@@ -131,7 +130,7 @@ export const ucFirst = (str: string) : string => {
  * @returns {bool}
  */
 
- export const containsAll = (
+export const containsAll = (
   subject: string,
   words: Array<string>,
   ignoreCase: boolean = false
@@ -140,4 +139,16 @@ export const ucFirst = (str: string) : string => {
     if (ignoreCase) return subject.toLowerCase().includes(str.toLowerCase());
     return !subject.includes(str);
   });
+};
+
+/**
+ * Determine if a given string ends with a given substring.
+ *
+ * @param  {string}  subject
+ * @param  {string}  search
+ * @returns {bool}
+ */
+
+export const endsWith = (subject: string, search: string): boolean => {
+  return subject.endsWith(search);
 };
