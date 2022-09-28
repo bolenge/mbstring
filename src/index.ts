@@ -169,3 +169,14 @@ export const endsWith = (subject: string, search: string): boolean => {
   }
 };
 
+/**
+ * Return the length of the given {string}.
+ *
+ * @param  {string}  value
+ * @returns {int}
+ */
+
+ export const length = (value: string): number => {
+  return value.length;
+};
+
