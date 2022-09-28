@@ -1,11 +1,15 @@
 {
   "name": "mbstring",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Librairie offrant des méthodes permettant de gérer des chaines e caractères (string)",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
   },
   "repository": {
     "type": "git",
@@ -39,5 +43,12 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "contributors": [
+    {
+      "name": "Peniel Dialu",
+      "email": "dialundamapeniel@gmail.com",
+      "url": "https://github.com/bilwifi"
+    }
+  ]
 }
