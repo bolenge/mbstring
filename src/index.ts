@@ -120,3 +120,24 @@ export const ucFirst = (str: string) : string => {
   if (ignoreCase) return subject.toLowerCase().includes(search.toLowerCase());
   return subject.includes(search);
 };
+
+
+/**
+ * Determine if a given string contains all array values.
+ *
+ * @param  {string}  subject
+ * @param  {array}  words
+ * @param  {bool}  ignoreCase
+ * @returns {bool}
+ */
+
+ export const containsAll = (
+  subject: string,
+  words: Array<string>,
+  ignoreCase: boolean = false
+): boolean => {
+  return !words.find((str) => {
+    if (ignoreCase) return subject.toLowerCase().includes(str.toLowerCase());
+    return !subject.includes(str);
+  });
+};
