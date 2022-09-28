@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * **after-last:** returns everything after the last occurrence of the given value in a string ([46184e2](https://github.com/bolenge/mbstring/commits/46184e26f9a0e462dde4b4b1827202409030c8e4))
-* **after:** returns everything after the last occurrence of the given value in a string ([62b9dd5](https://github.com/bolenge/mbstring/commits/62b9dd5dc2eb841aae68ae19acd7862a63e8ef3d))
+* **after:** returns everything after the given value in a string. ([62b9dd5](https://github.com/bolenge/mbstring/commits/62b9dd5dc2eb841aae68ae19acd7862a63e8ef3d))
 * **before-last:** returns everything before the last occurrence of the given value in a string ([758eae6](https://github.com/bolenge/mbstring/commits/758eae61eed67de1cb35cd6dc49ba55bb570d4b7))
 * **before:** returns everything before the given value in a string ([238fdc0](https://github.com/bolenge/mbstring/commits/238fdc056c6f228b46072b87c96336b70c4c79f2))
 * **between-first:** returns the smallest possible portion of a string between two values ([28e00ec](https://github.com/bolenge/mbstring/commits/28e00ec4f386a4619bb669b25d5429238a50f66a))
