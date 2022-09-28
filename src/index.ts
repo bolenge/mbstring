@@ -197,3 +197,15 @@ export const limit = (
   if (value.length < limit) return value;
   return `${value.substring(0, limit)}${end}`;
 };
+
+/**
+ * Convert the given string to lower-case.
+ *
+ * @param  {string}  value
+ * @returns {string}
+ */
+
+ export const lower = (value: string): string => {
+  return value.toLowerCase();
+};
+
