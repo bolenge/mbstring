@@ -152,3 +152,20 @@ export const containsAll = (
 export const endsWith = (subject: string, search: string): boolean => {
   return subject.endsWith(search);
 };
+
+/**
+ * Determine if a given string is valid JSON.
+ *
+ * @param  {string}  value
+ * @returns {bool}
+ */
+
+ export const isJson = (value: string): boolean => {
+  try {
+    JSON.parse(value);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
