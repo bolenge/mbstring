@@ -42,3 +42,17 @@ export const ucFirst = (str: string) : string => {
  export const before = (subject: string, search: string): string => {
   return search === "" ? subject : subject.split(search)[0];
 };
+
+/**
+ * Get the portion of a string before the last occurrence of a given value.
+ *
+ * @param  {string}  subject
+ * @param  {string}  search
+ * @returns {string}
+ */
+
+ export const beforeLast = (subject: string, search: string): string => {
+  return search === ""
+    ? subject
+    : subject.substring(0, subject.lastIndexOf(search));
+};
