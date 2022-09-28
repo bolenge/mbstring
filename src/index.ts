@@ -56,3 +56,16 @@ export const ucFirst = (str: string) : string => {
     ? subject
     : subject.substring(0, subject.lastIndexOf(search));
 };
+
+/**
+ * Get the portion of a string between two given values.
+ *
+ * @param  {string}  subject
+ * @param  {string}  from
+ * @param  {string}  to
+ * @returns {string}
+ */
+ export const between = (subject: string, from: string, to: string): string => {
+  if (from === "" || to === "") return subject;
+  return beforeLast(after(subject, from), to);
+};
