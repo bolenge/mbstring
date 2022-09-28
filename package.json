@@ -1,18 +1,22 @@
 {
   "name": "mbstring",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Librairie offrant des méthodes permettant de gérer des chaines e caractères (string)",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bolenge/mbstring.git"
   },
   "publishConfig": {
-    "registry":"https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [
     "string",
@@ -26,12 +30,25 @@
   ],
   "author": "Don de Dieu Bolenge",
   "license": "ISC",
-  "dependencies": {},
   "bugs": {
     "url": "https://github.com/bolenge/mbstring/issues"
   },
   "homepage": "https://github.com/bolenge/mbstring#readme",
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0",
     "typescript": "^4.8.3"
-  }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Peniel Dialu",
+      "email": "dialundamapeniel@gmail.com",
+      "url": "https://github.com/bilwifi"
+    }
+  ]
 }
