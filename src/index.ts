@@ -209,3 +209,14 @@ export const limit = (
   return value.toLowerCase();
 };
 
+/**
+ * Convert the given string to upper-case.
+ *
+ * @param  {string}  value
+ * @returns {string}
+ */
+
+ export const upper = (value: string): string => {
+  return value.toUpperCase();
+};
+
