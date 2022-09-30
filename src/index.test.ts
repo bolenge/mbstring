@@ -33,3 +33,11 @@ test("should return strings with first character uppercase", () => {
  test("should return everything before the given value in a string.", () => {
   expect(mbstring.before("This is my name", "my name")).toEqual("This is ");
 });
+
+/**
+ * @function mbstring.beforeLast
+ */
+
+ test("should return everything before the last occurrence of the given value in a string.", () => {
+  expect(mbstring.beforeLast("This is my name", "is")).toEqual("This ");
+});
