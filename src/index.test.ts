@@ -67,3 +67,12 @@ test("should return the smallest possible portion of a string between two given 
  test("should return converts the given string to camelCase.", () => {
   expect(mbstring.camel("foo_bar")).toEqual("fooBar");
 });
+
+/**
+ * @function mbstring.snake
+ */
+
+ test("should return converts the given string to snake_case.", () => {
+  expect(mbstring.snake("fooBar")).toEqual("foo_bar");
+  expect(mbstring.snake("fooBar", "-")).toEqual("foo-bar");
+});
