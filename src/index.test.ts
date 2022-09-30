@@ -145,3 +145,11 @@ test("should determines if the given string ends with the given value", () => {
  test("should  convert the given string to lower-case", () => {
   expect(mbstring.lower("Peniel DIALUNDAMA")).toEqual("peniel dialundama");
 });
+
+/**
+ * @function mbstring.upper
+ */
+
+ test("should  convert the given string to upper-case", () => {
+  expect(mbstring.upper("Peniel DIALUNDAMA")).toEqual("PENIEL DIALUNDAMA");
+});
