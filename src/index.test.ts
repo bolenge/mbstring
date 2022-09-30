@@ -76,3 +76,11 @@ test("should return the smallest possible portion of a string between two given 
   expect(mbstring.snake("fooBar")).toEqual("foo_bar");
   expect(mbstring.snake("fooBar", "-")).toEqual("foo-bar");
 });
+
+/**
+ * @function mbstring.kebab
+ */
+
+ test("should return converts the given string to snake_case.", () => {
+  expect(mbstring.kebab("fooBar")).toEqual("foo-bar");
+});
