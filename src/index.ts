@@ -105,11 +105,11 @@ export const betweenFirst = (
  */
 
 export const camel = (value: string): string => {
-  return (" " + value)
+  return lcFirst((" " + value)
     .toLowerCase()
     .replace(/[^a-zA-Z0-9]+(.)/g, function (match, chr) {
       return chr.toUpperCase();
-    });
+    }));
 };
 
 /**
