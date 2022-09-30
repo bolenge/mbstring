@@ -59,3 +59,11 @@ test("should return the portion of a string between two given values", () => {
 test("should return the smallest possible portion of a string between two given values", () => {
   expect(mbstring.betweenFirst("[a] bc [d]", "[", "]")).toEqual("a");
 });
+
+/**
+ * @function mbstring.camel
+ */
+
+ test("should return converts the given string to camelCase.", () => {
+  expect(mbstring.camel("foo_bar")).toEqual("fooBar");
+});
