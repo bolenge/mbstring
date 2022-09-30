@@ -153,3 +153,11 @@ test("should determines if the given string ends with the given value", () => {
  test("should  convert the given string to upper-case", () => {
   expect(mbstring.upper("Peniel DIALUNDAMA")).toEqual("PENIEL DIALUNDAMA");
 });
+
+/**
+ * @function mbstring.random
+ */
+
+ test("should  generate a more truly random alpha-numeric string", () => {
+  expect(mbstring.random(25)).toHaveLength(25);
+});
