@@ -1,11 +1,12 @@
 {
   "name": "mbstring",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Librairie offrant des méthodes permettant de gérer des chaines e caractères (string)",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "typedoc --out docs src/index.ts",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.5.0",
+    "typedoc": "^0.23.15",
     "typescript": "^4.8.3"
   },
   "config": {
