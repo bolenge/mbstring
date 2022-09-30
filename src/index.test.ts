@@ -15,3 +15,13 @@ test("should return strings with first character uppercase", () => {
  test("should return everything after the given value in a string.", () => {
   expect(mbstring.after("This is my name", "This is")).toEqual(" my name");
 });
+
+/**
+ * @function mbstring.afterLast
+ */
+
+ test("should return everything after the last occurrence of the given value in a string.", () => {
+  expect(mbstring.afterLast("My name is wifi, your name is bil", "is")).toEqual(
+    " bil"
+  );
+});
