@@ -121,3 +121,11 @@ test("should determines if the given string ends with the given value", () => {
     false
   );
 });
+
+/**
+ * @function mbstring.length
+ */
+
+ test("should  return the length of the given string", () => {
+  expect(mbstring.length("Peniel DIALUNDAMA")).toEqual(17);
+});
