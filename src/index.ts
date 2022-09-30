@@ -95,7 +95,7 @@ export const betweenFirst = (
  * @returns {string}
  */
 
-export const camel = (value: string, search: string): string => {
+export const camel = (value: string): string => {
   return (" " + value)
     .toLowerCase()
     .replace(/[^a-zA-Z0-9]+(.)/g, function (match, chr) {
