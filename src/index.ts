@@ -261,3 +261,18 @@ export const random = (length: number): string => {
     .toString(36)
     .slice(1);
 };
+
+/**
+ * Wrap the string with the given strings.
+ *
+ * @param  {string}  before
+ * @param  {string}  after
+ * @returns {string}
+ */
+ export const wrap = (
+  value: string,
+  before: string,
+  after: string = ""
+): string => {
+  return `${before}${value}${after || before}`;
+};
