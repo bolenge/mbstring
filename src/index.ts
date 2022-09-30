@@ -126,7 +126,7 @@ export const camel = (value: string): string => {
  * @returns {string}
  */
 
- export const kebab = (value: string, search: string): string => {
+ export const kebab = (value: string): string => {
   return snake(value, "-");
 };
 
