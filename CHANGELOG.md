@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/bolenge/mbstring/compare/v0.2.0...v0.3.0) (2022-09-30)
+
+
+### Features
+
+* **kebab:** converts the given string to kebab-case ([a2b4447](https://github.com/bolenge/mbstring/commits/a2b444773ca3c2ade539e406868fdc4e55371ee3))
+* **snake:** converts the given string to snake_case ([9793d57](https://github.com/bolenge/mbstring/commits/9793d5704fcd0a3f13abcd093b9624ff02705937))
+* **wrap:** wrap the string with the given strings ([66489fd](https://github.com/bolenge/mbstring/commits/66489fda3e1591e8ee88b2bb225c09da8f5989a0))
+
 ## [0.2.0](https://github.com/bolenge/mbstring/compare/v0.1.6...v0.2.0) (2022-09-28)
 
 
