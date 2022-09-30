@@ -161,3 +161,11 @@ test("should determines if the given string ends with the given value", () => {
  test("should  generate a more truly random alpha-numeric string", () => {
   expect(mbstring.random(25)).toHaveLength(25);
 });
+
+/**
+ * @function mbstring.wrap
+ */
+
+ test("should wrap the string with the given strings", () => {
+  expect(mbstring.wrap("Peniel", "Mr. ", " Wifi")).toEqual("Mr. Peniel Wifi");
+});
