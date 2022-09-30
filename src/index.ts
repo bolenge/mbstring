@@ -104,6 +104,33 @@ export const camel = (value: string, search: string): string => {
 };
 
 /**
+ * Convert a string to snake case.
+ *
+ * @param  {string}  value
+ * @param  {string}  delimiter
+ * @returns {string}
+ */
+
+ export const snake = (value: string, delimiter: string = "_"): string => {
+  const found =
+    value.match(
+      /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
+    ) || [];
+  return found.map((x) => x.toLowerCase()).join(delimiter);
+};
+
+/**
+ * Convert a string to kebab case.
+ *
+ * @param  {string}  $value
+ * @returns {string}
+ */
+
+ export const kebab = (value: string, search: string): string => {
+  return snake(value, "-");
+};
+
+/**
  * Determine if a given string contains a given substring.
  *
  * @param  {string}  subject
@@ -233,4 +260,19 @@ export const random = (length: number): string => {
   )
     .toString(36)
     .slice(1);
+};
+
+/**
+ * Wrap the string with the given strings.
+ *
+ * @param  {string}  before
+ * @param  {string}  after
+ * @returns {string}
+ */
+ export const wrap = (
+  value: string,
+  before: string,
+  after: string = ""
+): string => {
+  return `${before}${value}${after || before}`;
 };
