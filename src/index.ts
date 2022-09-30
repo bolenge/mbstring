@@ -104,6 +104,22 @@ export const camel = (value: string, search: string): string => {
 };
 
 /**
+ * Convert a string to snake case.
+ *
+ * @param  {string}  value
+ * @param  {string}  delimiter
+ * @returns {string}
+ */
+
+ export const snake = (value: string, delimiter: string = "_"): string => {
+  const found =
+    value.match(
+      /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
+    ) || [];
+  return found.map((x) => x.toLowerCase()).join(delimiter);
+};
+
+/**
  * Determine if a given string contains a given substring.
  *
  * @param  {string}  subject
