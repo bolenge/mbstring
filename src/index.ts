@@ -8,6 +8,15 @@ export const ucFirst = (str: string): string => {
 };
 
 /**
+ * Convert the first character of string to lowercase:
+ * @param {string} str
+ * @returns {string}
+ */
+export const lcFirst = (str: string): string => {
+  return str[0].toLowerCase() + str.substring(1);
+};
+
+/**
  * Return the remainder of a string after the first occurrence of a given value.
  *
  * @param  {string}  subject
@@ -111,7 +120,7 @@ export const camel = (value: string): string => {
  * @returns {string}
  */
 
- export const snake = (value: string, delimiter: string = "_"): string => {
+export const snake = (value: string, delimiter: string = "_"): string => {
   const found =
     value.match(
       /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
@@ -126,7 +135,7 @@ export const camel = (value: string): string => {
  * @returns {string}
  */
 
- export const kebab = (value: string): string => {
+export const kebab = (value: string): string => {
   return snake(value, "-");
 };
 
@@ -269,7 +278,7 @@ export const random = (length: number): string => {
  * @param  {string}  after
  * @returns {string}
  */
- export const wrap = (
+export const wrap = (
   value: string,
   before: string,
   after: string = ""
