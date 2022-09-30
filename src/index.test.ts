@@ -41,3 +41,13 @@ test("should return strings with first character uppercase", () => {
  test("should return everything before the last occurrence of the given value in a string.", () => {
   expect(mbstring.beforeLast("This is my name", "is")).toEqual("This ");
 });
+
+/**
+ * @function mbstring.between
+ */
+
+ test("should return the portion of a string between two given values", () => {
+  expect(mbstring.between("This is my name", "This", "name")).toEqual(
+    " is my "
+  );
+});
