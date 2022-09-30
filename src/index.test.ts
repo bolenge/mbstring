@@ -108,3 +108,16 @@ test("should return the smallest possible portion of a string between two given 
 test("should determines if the given string ends with the given value", () => {
   expect(mbstring.endsWith("This is my name", "name")).toEqual(true);
 });
+
+/**
+ * @function mbstring.isJson
+ */
+
+ test("should determine if a given string is valid JSON", () => {
+  expect(
+    mbstring.isJson('{"name":"DIALUNDAMA", "firstName":"Peniel"}')
+  ).toEqual(true);
+  expect(mbstring.isJson('{name:"DIALUNDAMA", "firstName":"Peniel"}')).toEqual(
+    false
+  );
+});
