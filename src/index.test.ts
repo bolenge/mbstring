@@ -84,3 +84,19 @@ test("should return the smallest possible portion of a string between two given 
  test("should return converts the given string to snake_case.", () => {
   expect(mbstring.kebab("fooBar")).toEqual("foo-bar");
 });
+
+/**
+ * @function mbstring.contains
+ */
+
+ test("should determines if the given string contains the given value", () => {
+  expect(mbstring.contains("This is my name", "my")).toEqual(true);
+});
+
+/**
+ * @function mbstring.containsAll
+ */
+
+ test("should determines if the given string contains all of the values in a given array", () => {
+  expect(mbstring.containsAll("This is my name", ["my", "name"])).toEqual(true);
+});
