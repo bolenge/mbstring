@@ -100,3 +100,11 @@ test("should return the smallest possible portion of a string between two given 
  test("should determines if the given string contains all of the values in a given array", () => {
   expect(mbstring.containsAll("This is my name", ["my", "name"])).toEqual(true);
 });
+
+/**
+ * @function mbstring.endsWith
+ */
+
+test("should determines if the given string ends with the given value", () => {
+  expect(mbstring.endsWith("This is my name", "name")).toEqual(true);
+});
