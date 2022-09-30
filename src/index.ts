@@ -120,6 +120,17 @@ export const camel = (value: string, search: string): string => {
 };
 
 /**
+ * Convert a string to kebab case.
+ *
+ * @param  {string}  $value
+ * @returns {string}
+ */
+
+ export const kebab = (value: string, search: string): string => {
+  return snake(value, "-");
+};
+
+/**
  * Determine if a given string contains a given substring.
  *
  * @param  {string}  subject
