@@ -25,3 +25,11 @@ test("should return strings with first character uppercase", () => {
     " bil"
   );
 });
+
+/**
+ * @function mbstring.before
+ */
+
+ test("should return everything before the given value in a string.", () => {
+  expect(mbstring.before("This is my name", "my name")).toEqual("This is ");
+});
