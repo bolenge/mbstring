@@ -137,3 +137,11 @@ test("should determines if the given string ends with the given value", () => {
  test("should  limit the number of characters in a string", () => {
   expect(mbstring.limit("Peniel DIALUNDAMA", 12)).toEqual("Peniel DIALU...");
 });
+
+/**
+ * @function mbstring.lower
+ */
+
+ test("should  convert the given string to lower-case", () => {
+  expect(mbstring.lower("Peniel DIALUNDAMA")).toEqual("peniel dialundama");
+});
