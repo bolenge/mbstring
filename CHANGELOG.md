@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/bolenge/mbstring/compare/v0.3.0...v0.3.1) (2022-09-30)
+
+
+### Features
+
+* **lc-first:** convert the first character of string to lowercase ([26afd32](https://github.com/bolenge/mbstring/commits/26afd32075cac5a40772741b6c2b8b8e6bfd4691))
+
+
+### Bug Fixes
+
+* **camel:** fix convert to camel-case ([4765fc2](https://github.com/bolenge/mbstring/commits/4765fc2ef2b5387f2dbe7ce105632eaf64245884))
+* **camel:** fix function parameter ([3a7ed64](https://github.com/bolenge/mbstring/commits/3a7ed6420b8b02d07f6e56ca4571caaff89e9b9a))
+* **kebab:** fix function parameter ([834310a](https://github.com/bolenge/mbstring/commits/834310a300d8c2f359bf25ca3f15923e66419028))
+
 ## [0.3.0](https://github.com/bolenge/mbstring/compare/v0.2.0...v0.3.0) (2022-09-30)
 
 
